@@ -1,0 +1,13 @@
+<div class="container" *ngIf="childDetails">
+  <div class="row">
+    <div class="col-12">Name: {{ childDetails.name }}</div>
+
+    <div class="col-12">Money: {{ childDetails.money }}</div>
+
+    <div class="col-12">
+      <button type="button" class="btn btn-success" (click)="addMoney()">
+        Add Money
+      </button>
+    </div>
+  </div>
+</div>

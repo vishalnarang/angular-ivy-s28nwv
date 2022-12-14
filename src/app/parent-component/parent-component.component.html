@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="text-center">Child1 Component</div>
+
+  <app-child-component [childDetails]="childDetails"></app-child-component>
+  <div class="row mt-2">
+    <div class="col-6">
+      <button type="button" class="btn btn-primary" (click)="sendMoney(1)">
+        Send Money to Jack
+      </button>
+    </div>
+    <div class="col-6">
+      <button type="button" class="btn btn-primary" (click)="getMoney(1)">
+        Get Money to Jill
+      </button>
+    </div>
+  </div>
+
+  <div class="text-center">Child2 Component</div>
+
+  <app-child2-component [childDetails]="childDetails1"></app-child2-component>
+
+  <div class="row mt-2">
+    <div class="col-6">
+      <button type="button" class="btn btn-primary" (click)="sendMoney(2)">
+        Send Money to Jill
+      </button>
+    </div>
+
+    <div class="col-6">
+      <button type="button" class="btn btn-primary" (click)="getMoney(2)">
+        Get Money to Jack
+      </button>
+    </div>
+  </div>
+</div>
